@@ -55,7 +55,7 @@ exports.config = {
         "appium:deviceName": "Pixel 8",
         "appium:deviceVersion": "11.0",
         "appium:automationName": "UIAutomator2",
-        "appium:app": "/Users/amjadali/Desktop/nomoBank_Mobile_assignment/app/android/mda-2.0.2-23.apk",
+        "appium:app": path.join(process.cwd(),'app/android/mda-2.0.2-23.apk'),
         "appium:appPackage": "com.saucelabs.mydemoapp.android",
         "appium:appActivity": "com.saucelabs.mydemoapp.android.view.activities.SplashActivity"
       }],

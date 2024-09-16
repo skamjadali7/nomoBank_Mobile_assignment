@@ -30,10 +30,6 @@ class LoginPage{
         return $('//*[@text="Products"]')
     }
 
-    async loginPage () {
-        await driver.startActivity("com.saucelabs.mydemoapp.android","com.saucelabs.mydemoapp.android.view.activities.MainActivity")
-    }
-
     async errorMessage (errorMessageType) {
         return $(`//*[@resource-id="com.saucelabs.mydemoapp.android:id/${errorMessageType}ErrorTV"]`)
     }
