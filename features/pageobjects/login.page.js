@@ -1,9 +1,8 @@
-const { $ } = require('@wdio/globals')
-
+import {$} from '@wdio/globals'
 /**
  * sub page containing specific selectors and methods for a specific page
  */
-class LoginPage{
+export class LoginPage{
     /**
      * define selectors using getter methods
      */
@@ -34,5 +33,3 @@ class LoginPage{
         return $(`//*[@resource-id="com.saucelabs.mydemoapp.android:id/${errorMessageType}ErrorTV"]`)
     }
 }
-
-module.exports = new LoginPage();

@@ -1,4 +1,5 @@
-exports.config = {
+import path from 'path'
+export const config = {
     //
     // ====================
     // Runner Configuration

@@ -1,6 +1,7 @@
-const { Given, When, Then } = require('@wdio/cucumber-framework');
-const { expect } = require('@wdio/globals')
-const loginPage = require('../pageobjects/login.page');
+import { Given,When,Then } from '@wdio/cucumber-framework';
+import {expect} from '@wdio/globals'
+import {LoginPage} from '../pageobjects/login.page'
+const loginPage = new LoginPage()
 Given('I click to menu for login',async()=>{
     await loginPage.hamburgerMenuIcon.click()
 })
